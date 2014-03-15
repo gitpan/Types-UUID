@@ -18,7 +18,7 @@ DESCRIPTION
     Types::UUID is a type constraint library suitable for use with Moo/Moose
     attributes, Kavorka sub signatures, and so forth.
 
-Type
+  Type
     Currently the module only provides one type constraint, which is exported
     by default.
 

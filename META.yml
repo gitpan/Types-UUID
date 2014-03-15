@@ -26,7 +26,7 @@ optional_features: {}
 provides:
   Types::UUID:
     file: lib/Types/UUID.pm
-    version: 0.001
+    version: 0.002
 requires:
   Type::Tiny: 0.016
   UUID::Tiny: 1.02
@@ -37,4 +37,4 @@ resources:
   homepage: https://metacpan.org/release/Types-UUID
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-types-uuid.git
-version: 0.001
+version: 0.002

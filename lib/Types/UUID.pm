@@ -5,7 +5,7 @@ use warnings;
 package Types::UUID;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 use Type::Library -base;
 use Type::Tiny ();
@@ -65,7 +65,7 @@ Types::UUID - type constraints for UUIDs
 L<Types::UUID> is a type constraint library suitable for use with
 L<Moo>/L<Moose> attributes, L<Kavorka> sub signatures, and so forth.
 
-=head1 Type
+=head2 Type
 
 Currently the module only provides one type constraint, which is
 exported by default.
