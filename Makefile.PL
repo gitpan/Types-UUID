@@ -27,7 +27,7 @@ my $meta = {
                         },
                       },
   "provides"       => {
-                        "Types::UUID" => { file => "lib/Types/UUID.pm", version => 0.003 },
+                        "Types::UUID" => { file => "lib/Types/UUID.pm", version => 0.004 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -41,7 +41,7 @@ my $meta = {
                                         },
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/Types-UUID/project",
                       },
-  "version"        => 0.003,
+  "version"        => 0.004,
 };
 
 my %dynamic_config;
