@@ -10,8 +10,8 @@ SYNOPSIS
        has identifier => (
           is      => 'lazy',
           isa     => Uuid,
-          coerce  => Uuid->coercion,
-          builder => sub { undef },
+          coerce  => 1,
+          builder => Uuid->generator,
        );
 
 DESCRIPTION
@@ -30,6 +30,18 @@ DESCRIPTION
         `Str` (fixes slightly broken-looking UUIDs, adding missing dashes;
         also accepts base-64-encoded UUIDs) and URI objects using the
         `urn:uuid:` URI scheme.
+
+  Methods
+    The `Uuid` type constraint is actually blessed into a subclass of
+    Type::Tiny, and provides an aditional method:
+
+    `Uuid->generate`
+        Generates a new UUID. `Uuid->coerce(undef)` would also work, but looks
+        a little odd.
+
+    `Uuid->generator`
+        Returns a coderef which generates a new UUID. For an example usage,
+        see the "SYNOPSIS".
 
 BUGS
     Please report any bugs to

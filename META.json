@@ -4,7 +4,7 @@
       "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640",
    "keywords" : [],
    "license" : [
       "perl_5"
@@ -30,14 +30,9 @@
             "ExtUtils::MakeMaker" : "6.17"
          }
       },
-      "develop" : {
-         "recommends" : {
-            "Dist::Inkt" : "0.001"
-         }
-      },
       "runtime" : {
          "requires" : {
-            "Type::Tiny" : "0.016",
+            "Type::Tiny" : "1.000000",
             "UUID::Tiny" : "1.02",
             "perl" : "5.008"
          }
@@ -55,12 +50,11 @@
    "provides" : {
       "Types::UUID" : {
          "file" : "lib/Types/UUID.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "X_identifier" : "http://purl.org/NET/cpan-uri/dist/Types-UUID/project",
       "bugtracker" : {
          "web" : "http://rt.cpan.org/Dist/Display.html?Queue=Types-UUID"
       },
@@ -72,7 +66,8 @@
          "type" : "git",
          "url" : "git://github.com/tobyink/p5-types-uuid.git",
          "web" : "https://github.com/tobyink/p5-types-uuid"
-      }
+      },
+      "x_identifier" : "http://purl.org/NET/cpan-uri/dist/Types-UUID/project"
    },
-   "version" : "0.002"
+   "version" : "0.003"
 }

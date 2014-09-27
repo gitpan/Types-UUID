@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "type constraints for UUIDs",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -18,17 +18,16 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        develop   => { recommends => { "Dist::Inkt" => 0.001 } },
-                        runtime   => {
-                                       requires => { "perl" => 5.008, "Type::Tiny" => 0.016, "UUID::Tiny" => 1.02 },
-                                     },
-                        test      => {
-                                       recommends => { URI => 0 },
-                                       requires   => { "Test::More" => 0.96, "Test::TypeTiny" => 0 },
-                                     },
+                        runtime => {
+                          requires => { "perl" => 5.008, "Type::Tiny" => "1.000000", "UUID::Tiny" => 1.02 },
+                        },
+                        test => {
+                          recommends => { URI => 0 },
+                          requires   => { "Test::More" => 0.96, "Test::TypeTiny" => 0 },
+                        },
                       },
   "provides"       => {
-                        "Types::UUID" => { file => "lib/Types/UUID.pm", version => 0.002 },
+                        "Types::UUID" => { file => "lib/Types/UUID.pm", version => 0.003 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -40,9 +39,9 @@ my $meta = {
                                           url  => "git://github.com/tobyink/p5-types-uuid.git",
                                           web  => "https://github.com/tobyink/p5-types-uuid",
                                         },
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Types-UUID/project",
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/Types-UUID/project",
                       },
-  "version"        => 0.002,
+  "version"        => 0.003,
 };
 
 my %dynamic_config;
